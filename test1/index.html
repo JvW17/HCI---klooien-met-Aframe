@@ -10,10 +10,10 @@
 
   <body>
 
-    <a-scene background="color: #CACBD7">
+    <a-scene>
 
       <a-assets>
-        <img id="my-image" src="images/lucht2.jpg"/>
+        <img id="lucht" src="images/lucht2.jpg"/>
         <!-- <a-asset-item id="object" src="tree.obj"></a-asset-item> -->
       </a-assets>
 
@@ -29,10 +29,12 @@
         </a-ring>
       </a-camera>
 
-      <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361"
+      <!-- <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361"
                      rotation="0 150 0"
                      scale="0.8 0.8 0.8"
-                     position="0 0 0"></a-curvedimage>
+                     position="0 0 0"></a-curvedimage> -->
+
+      <a-sky src="#lucht"></a-sky>
 
 
 
