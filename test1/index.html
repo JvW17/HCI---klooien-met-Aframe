@@ -5,36 +5,7 @@
     <title>Aframe test1</title>
     <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!-- <script src="scripts/main.js" defer></script>
-
-    animation__vogel1=
-      "dur:3000;
-      dir: alternate;
-      easing:easeInOutQuad;
-      from:0 0 -4;
-      to:0 1 -4;
-      loop:-1;
-      property:position;"
-
-    animation__vogel2=
-      "dur:2000;
-      dir: alternate;
-      easing:easeInOutSine;
-      from: -10 45 -5;
-      to: 10 45 5;
-      loop:-1;
-      property:rotation;"
-
-      animation__mouseleave=
-        "dur:3000;
-        dir: alternate;
-        easing:easeInOutQuad;
-        from:0 0 -4;
-        to:0 1 -4;
-        loop:-1;
-        property:position;">
-
-  -->
+    <!-- <script src="scripts/main.js" defer></script> -->
   </head>
 
   <body>
@@ -52,7 +23,23 @@
         gltf-model="#vogel"
         position="0 1 -4"
         rotation="0 45 0"
+        animation__vogel1=
+          "dur:3000;
+          dir: alternate;
+          easing:easeInOutQuad;
+          from:0 0 -4;
+          to:0 1 -4;
+          loop:-1;
+          property:position;"
 
+        animation__vogel2=
+          "dur:2000;
+          dir: alternate;
+          easing:easeInOutSine;
+          from: -10 45 -5;
+          to: 10 45 5;
+          loop:-1;
+          property:rotation;"
 
           animation__mouseenter=
             "dur:6000;
@@ -63,7 +50,14 @@
             loop:-1;
             property:position;"
 
-
+          animation__mouseleave=
+            "dur:3000;
+            dir: alternate;
+            easing:easeInOutQuad;
+            from:0 0 -4;
+            to:0 1 -4;
+            loop:-1;
+            property:position;">
 
       ></a-entity>
 
@@ -86,7 +80,7 @@
         animation__mouseleave="
           property: components.material.material.color;
           type: color;
-          to: hotpink;
+          to: red;
           startEvents: mouseleave;
           dur: 500;">
       </a-box>
