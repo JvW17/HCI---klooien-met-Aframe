@@ -15,9 +15,17 @@
       <a-assets>
         <img id="lucht" src="images/lucht2.jpg"/>
         <a-asset-item id="vogel" src="files/scene.gltf"></a-asset-item>
+        <a-asset-item id="object" src="files/test2.obj"></a-asset-item>
+        <a-asset-item id="material" src="files/test2.mtl"></a-asset-item>
       </a-assets>
 
       <a-sky src="#lucht"></a-sky>
+
+      <a-obj-model
+        src="#object"
+        mtl="#material"
+        position="0 1 -4"
+        </a-obj-model>
 
       <a-entity
         gltf-model="#vogel"
@@ -40,24 +48,6 @@
           to: 10 45 5;
           loop:-1;
           property:rotation;"
-
-          animation__mouseenter=
-            "dur:6000;
-            dir: alternate;
-            easing:easeInOutQuad;
-            from:0 0 -4;
-            to:0 1 -4;
-            loop:-1;
-            property:position;"
-
-          animation__mouseleave=
-            "dur:3000;
-            dir: alternate;
-            easing:easeInOutQuad;
-            from:0 0 -4;
-            to:0 1 -4;
-            loop:-1;
-            property:position;">
 
       ></a-entity>
 
