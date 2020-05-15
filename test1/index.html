@@ -13,7 +13,7 @@
     <a-scene background="color: dodgerblue">
 
       <a-assets>
-        <img id="lucht" src="lucht.jpg"/>
+        <img id="my-image" src="BatmanvSuperman.jpg"/>
         <!-- <a-asset-item id="object" src="tree.obj"></a-asset-item> -->
       </a-assets>
 
@@ -29,15 +29,13 @@
         </a-ring>
       </a-camera>
 
-      <a-curvedimage
-        src="#lucht"
-        height="15.0"
-        radius="5.7"
-        theta-length="361"
-        rotation="0 150 0"
-        scale="0.8 0.8 0.8"
-        position="0 2 5">
-      </a-curvedimage>
+      <a-curvedimage src="#my-image" height="15.0" radius="5.7" theta-length="361"
+                     rotation="0 150 0"
+                     scale="0.8 0.8 0.8"
+                     position="0 0 0"></a-curvedimage>
+
+      <a-curvedimage src="img/BatmanvSuperman.jpg"></a-curved-image>
+
 
       <a-plane id="ground"
         position="0 0 -4"
